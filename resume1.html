@@ -1,115 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Added custom CSS -->
+    <style type="text/css">
+        /* General body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-size: cover;
+            padding-top: 80px; /* Ensure content is below the fixed header */
+            min-height: 100vh; /* Make sure the body takes at least the full height of the viewport */
+        }
 
-<style type="text/css">
-    /* General body styling */
-    body {
-      min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
-      margin: 0;
-      padding: 30px;
-      font-family: sans-serif;
-      background-size: cover;
-      padding-top: 80px; /* Add padding-top to prevent content from being hidden under fixed header */
-    }
-  
-    /* Header styling */
-    header {
-      background-color: orange; /* Bright orange background for the header */
-      position: fixed; /* Keep the header fixed at the top */
-      left: 0;
-      right: 0;
-      top: 0;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center; /* Center the content of the header */
-      box-shadow: 0 0 25px 0 black; /* Add a shadow for some depth */
-      z-index: 1000; /* Ensure header stays on top of other content */
-    }
-  
-    /* Styling for all elements inside the header */
-    header * {
-      display: inline;
-    }
-  
-    /* Navigation list inside the header */
-    header ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-  
-    /* Navigation list items */
-    header li {
-      margin: 0 20px;
-    }
-  
-    /* Styling the links in the navigation */
-    header li a {
-      color: white; /* Changed to white for better contrast */
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px; /* Set font size for links */
-    }
-  
-    /* Hover effect for the links */
-    header li a:hover {
-      text-decoration: underline; /* Underline on hover for better interactivity */
-      color: #ffcc00; /* Change color on hover */
-    }
-  </style>
-  
+        /* Header styling */
+        header {
+            background-color: orange; /* Bright orange background for the header */
+            position: fixed; /* Keep the header fixed at the top */
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the content of the header */
+            box-shadow: 0 0 25px 0 black; /* Add a shadow for some depth */
+            z-index: 1000; /* Ensure header stays on top of other content */
+        }
+
+        /* Navigation list inside the header */
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Navigation list items */
+        header li {
+            margin: 0 20px;
+        }
+
+        /* Styling the links in the navigation */
+        header li a {
+            color: white; /* White text for better contrast */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px; /* Set font size for links */
+        }
+
+        /* Hover effect for the links */
+        header li a:hover {
+            text-decoration: underline; /* Underline on hover for better interactivity */
+            color: #ffcc00; /* Change color on hover */
+        }
+
+        /* Content styling */
+        section {
+            margin-top: 80px; /* Added margin to push the content below the header */
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 <header>
     <nav>
         <ul>
-          <li><a href="home1.html">Home</a></li>
-         <li><a href="about1.html">About Me</a></li>
-         <li><a href="resume1.html">Resume</a></li>
-         <li><a href="contact1.html">Contact Me</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
         </ul>
     </nav>
 </header>
+
 <section id="Resume">
     <h1>Resume</h1>
 
-    <section>
-        <h2>Dekota Smith</h2>
-        <p>Email: dekotasmith099@my.madonna.edu | GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    <h2>Dekota Smith</h2>
+    <p>Email: dekotasmith099@my.madonna.edu | GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
 
-        <h3>Education</h3>
-        <p>Bachelor of Science in Computer Science - XYZ University (2023)</p>
+    <h3>Education</h3>
+    <p>Bachelor of Science in Computer Science - XYZ University (2023)</p>
 
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Git and GitHub</li>
-            <li>Web Development</li>
-            <li>Problem Solving</li>
-        </ul>
+    <h3>Technical Skills</h3>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Git and GitHub</li>
+        <li>Web Development</li>
+        <li>Problem Solving</li>
+    </ul>
 
-        <h3>Work Experience</h3>
-        <p>After earning my Bachelor of Science in Computer Science, I started working as a Junior Web Developer at XYZ Technologies in June 2023. In this role, I helped build and maintain websites using HTML, CSS, and JavaScript, which gave me practical experience in web development.</p>
+    <h3>Work Experience</h3>
+    <p>After earning my Bachelor of Science in Computer Science, I started working as a Junior Web Developer at XYZ Technologies in June 2023. In this role, I helped build and maintain websites using HTML, CSS, and JavaScript, which gave me practical experience in web development.</p>
 
-        <p>I worked closely with other team members, like designers and backend developers, to add new features and fix any issues. This teamwork helped me learn how front-end and back-end development work together to create a smooth user experience.</p>
+    <p>I worked closely with other team members, like designers and backend developers, to add new features and fix any issues. This teamwork helped me learn how front-end and back-end development work together to create a smooth user experience.</p>
 
-        <p>Part of my job also involved improving website performance to make sure pages loaded quickly and worked well for users. I participated in user testing, using feedback to make improvements to the website.</p>
+    <p>Part of my job also involved improving website performance to make sure pages loaded quickly and worked well for users. I participated in user testing, using feedback to make improvements to the website.</p>
 
-        <p>I also used Git, a tool for tracking and managing code changes, to collaborate with my team and keep our work organized. This experience helped me apply the skills I learned during my degree and improved my ability to contribute to web development projects.</p>
+    <p>I also used Git, a tool for tracking and managing code changes, to collaborate with my team and keep our work organized. This experience helped me apply the skills I learned during my degree and improved my ability to contribute to web development projects.</p>
 
-        <p><strong>Web Development Intern</strong> | ABC Tech (Summer 2022)</p>
-        <ul>
-            <li>Developed and maintained websites using HTML, CSS, and JavaScript.</li>
-            <li>Collaborated with the design team to implement new features.</li>
-        </ul>
-    </section>
+    <p><strong>Web Development Intern</strong> | ABC Tech (Summer 2022)</p>
+    <ul>
+        <li>Developed and maintained websites using HTML, CSS, and JavaScript.</li>
+        <li>Collaborated with the design team to implement new features.</li>
+    </ul>
 </section>
 
 </body>
