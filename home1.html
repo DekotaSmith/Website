@@ -5,6 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
 <link rel="stylesheet" href="css/style.css">
+
+<style type="text/css">
+    /* General body styling */
+    body {
+      min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+      margin: 0;
+      padding: 30px;
+      font-family: sans-serif;
+      background-size: cover;
+      padding-top: 80px; /* Add padding-top to prevent content from being hidden under fixed header */
+    }
+  
+    /* Header styling */
+    header {
+      background-color: orange; /* Bright orange background for the header */
+      position: fixed; /* Keep the header fixed at the top */
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Center the content of the header */
+      box-shadow: 0 0 25px 0 black; /* Add a shadow for some depth */
+      z-index: 1000; /* Ensure header stays on top of other content */
+    }
+  
+    /* Styling for all elements inside the header */
+    header * {
+      display: inline;
+    }
+  
+    /* Navigation list inside the header */
+    header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+  
+    /* Navigation list items */
+    header li {
+      margin: 0 20px;
+    }
+  
+    /* Styling the links in the navigation */
+    header li a {
+      color: white; /* Changed to white for better contrast */
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px; /* Set font size for links */
+    }
+  
+    /* Hover effect for the links */
+    header li a:hover {
+      text-decoration: underline; /* Underline on hover for better interactivity */
+      color: #ffcc00; /* Change color on hover */
+    }
+  </style>  
+
 </head>
 <body>
 <header>
